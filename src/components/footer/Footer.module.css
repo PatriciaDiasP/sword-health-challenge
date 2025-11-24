@@ -1,0 +1,7 @@
+.footer {
+  background-color: var(--footer-background, #edeae8);
+  padding: var(--spacing-size-24, 1.5rem) var(--spacing-size-48, 3rem);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

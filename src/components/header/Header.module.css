@@ -1,0 +1,41 @@
+.header {
+  position: sticky;
+  top: var(--spacing-size-16, 1rem);
+
+  background-color: var(--nav-background, #ffffff);
+  border-radius: var(--radius-16, 1rem);
+  padding: var(--spacing-size-16, 1rem) var(--spacing-size-24, 1.5rem);
+  margin: var(--spacing-size-24, 1.5rem) var(--spacing-size-48, 3rem) 0;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-size-64, 4rem);
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    line-height: 0;
+  }
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  gap: var(--spacing-size-24, 1.5rem);
+}
+
+.navLink {
+  transition: color 0.2s;
+  color: var(--button-text-color, #1f222c);
+  font-weight: 600;
+
+  &:hover {
+    color: var(--button-text-hover-color, #171717);
+  }
+}
+
+.activeLink {
+  color: var(--button-text-active-color, #365d95);
+}

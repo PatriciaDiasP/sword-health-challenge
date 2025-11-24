@@ -1,0 +1,30 @@
+# Next.js build output
+.next/
+out/
+build/
+
+# Node modules
+node_modules/
+
+# Jest coverage reports
+coverage/
+
+# ESLint cache
+.eslintcache
+
+# Logs
+*.log
+
+# Git metadata
+.git/
+.gitignore
+
+# Editor/IDE config
+.vscode/
+.idea/
+
+# Generated TypeScript declaration files
+*.d.ts
+
+# Ignore env files
+.env

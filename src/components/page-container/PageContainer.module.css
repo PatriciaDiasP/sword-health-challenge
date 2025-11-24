@@ -1,0 +1,6 @@
+.container {
+  padding: var(--spacing-size-32, 2rem) var(--spacing-size-48, 3rem);
+  margin: 0 auto;
+  width: 100%;
+  flex: 1;
+}
