@@ -1,14 +1,17 @@
 import type { Metadata } from 'next';
-import { Montserrat } from 'next/font/google';
+import { Montserrat, Outfit } from 'next/font/google';
 
-import Header from '@/components/header/Header';
-import Footer from '@/components/footer/Footer';
 import './globals.css';
 import { PageContainer } from '@/components/page-container/PageContainer';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
-  weight: ['400', '600', '700'],
+  weight: ['400', '500', '600', '700'],
+});
+
+const outfit = Outfit({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
 });
 
 export const metadata: Metadata = {
@@ -23,10 +26,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
-        <Header />
+      <body className={`${outfit.className} ${montserrat.className}`}>
         <PageContainer>{children}</PageContainer>
-        <Footer />
       </body>
     </html>
   );

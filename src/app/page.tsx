@@ -1,3 +1,5 @@
+import StartGuide from './start-guide/StartGuide';
+
 export default function Home() {
-  return <h1>Hello world!</h1>;
+  return <StartGuide />;
 }
