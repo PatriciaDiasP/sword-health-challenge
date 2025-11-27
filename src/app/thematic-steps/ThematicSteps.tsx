@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import styles from './StartGuide.module.css';
+
+import styles from './ThematicSteps.module.css';
 
 interface Step {
   stepNumber: number;
@@ -48,7 +49,7 @@ function StepCard({ stepNumber, src, alt, title, subtitle }: Step) {
   );
 }
 
-export default function StartGuide() {
+export default function ThematicSteps() {
   return (
     <section aria-labelledby="getting-started-heading" className={styles.container}>
       <header className={styles.header}>

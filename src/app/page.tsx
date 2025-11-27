@@ -1,5 +1,11 @@
-import StartGuide from './start-guide/StartGuide';
+import ThematicSteps from './thematic-steps/ThematicSteps';
+import ThematicHero from './thematic-hero/ThematicHero';
 
 export default function Home() {
-  return <StartGuide />;
+  return (
+    <>
+      <ThematicHero />
+      <ThematicSteps />
+    </>
+  );
 }

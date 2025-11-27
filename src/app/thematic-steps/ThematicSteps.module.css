@@ -9,7 +9,9 @@
 
 .container {
   gap: var(--spacing-size-64, 4rem);
-  padding: 0 var(--container-padding-horizontal, 4rem);
+  padding: var(--padding-vertical-lg, 7.5rem) var(--container-padding-horizontal-lg, 4rem);
+  max-width: var(--screen-lg, 80rem);
+  margin: auto;
 }
 
 .header {
@@ -28,6 +30,7 @@
   display: flex;
   flex-direction: row;
   gap: var(--spacing-size-80, 5rem);
+  justify-content: space-between;
 }
 
 .stepNumber {
@@ -41,12 +44,12 @@
   border-radius: 0.75rem;
   z-index: 1;
   font-family: var(--font-family-strong, 'Outfit');
-  font-weight: var(--font-weight-heading-bold, 700);
+  font-weight: var(--font-weight-strong-bold, 700);
   font-size: var(--font-size-strong-md, 2rem);
   line-height: var(--font-lineHeight-strong-md, 2.25rem);
   letter-spacing: var(--font-letterSpacing-strong-lg, -0.04em);
   text-transform: uppercase;
-  color: var(--background, #ffffff);
+  color: var(--color-default-white, #ffffff);
 }
 
 .stepCard {
@@ -70,7 +73,11 @@
   gap: var(--spacing-size-14, 0.875rem);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
+  .container {
+    padding: var(--padding-vertical-sm, 4rem) var(--container-padding-horizontal-sm, 1.5rem);
+  }
+
   .steps {
     flex-direction: column;
   }
@@ -98,17 +105,19 @@
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 1;
   }
 }
 
-@media (min-width: 1245px) {
-  .container::before {
+@media (min-width: 48.063rem) {
+  .content {
+    position: relative;
+  }
+  .content::before {
     content: '';
     position: absolute;
-    top: 28rem;
-    left: 0;
-    right: 0;
+    top: 1.5rem;
+    left: -50vw;
+    right: -50vw;
     height: 0.063rem;
     background-color: var(--color-default-primary-200, #cddff8);
     z-index: 0;

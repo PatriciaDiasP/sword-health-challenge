@@ -3,6 +3,7 @@ import { Montserrat, Outfit } from 'next/font/google';
 
 import './globals.css';
 import { PageContainer } from '@/components/page-container/PageContainer';
+import Header from '@/components/header/Header';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -11,7 +12,7 @@ const montserrat = Montserrat({
 
 const outfit = Outfit({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['400', '500', '600', '700', '900'],
 });
 
 export const metadata: Metadata = {
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${outfit.className} ${montserrat.className}`}>
+        <Header />
         <PageContainer>{children}</PageContainer>
       </body>
     </html>
