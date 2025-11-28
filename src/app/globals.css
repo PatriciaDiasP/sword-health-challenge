@@ -129,8 +129,7 @@ body {
 body {
   background: var(--background, #ffffff);
   color: var(--color-default-grey-900, #1f222c);
-  display: flex;
-  flex-direction: column;
+  display: block;
   overflow-x: hidden;
 }
 

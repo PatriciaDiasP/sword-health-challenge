@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Montserrat, Outfit } from 'next/font/google';
 import { PageContainer } from '@/components/page-container/PageContainer';
 import Header from '@/components/header/Header';
@@ -18,6 +18,13 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: 'Frontend Challenge',
   description: 'Sword Health - Frontend Challenge',
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({
