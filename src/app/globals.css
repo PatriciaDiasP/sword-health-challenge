@@ -131,6 +131,7 @@ body {
   color: var(--color-default-grey-900, #1f222c);
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 h1,
