@@ -1,8 +1,5 @@
 .container,
-.header,
-.stepCard,
-.content,
-.text {
+.header {
   display: flex;
   flex-direction: column;
 }
@@ -33,46 +30,6 @@
   justify-content: space-between;
 }
 
-.stepNumber {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 3rem;
-  height: 3rem;
-  background-color: var(--color-default-primary-500, #5993ea);
-  border-radius: 0.75rem;
-  z-index: 1;
-  font-family: var(--font-family-strong, 'Outfit');
-  font-weight: var(--font-weight-strong-bold, 700);
-  font-size: var(--font-size-strong-md, 2rem);
-  line-height: var(--font-lineHeight-strong-md, 2.25rem);
-  letter-spacing: var(--font-letterSpacing-strong-lg, -0.04em);
-  text-transform: uppercase;
-  color: var(--color-default-white, #ffffff);
-}
-
-.stepCard {
-  gap: var(--spacing-size-28, 1.75rem);
-  max-width: 20rem;
-  flex: 1 1 20rem;
-}
-
-.image {
-  width: 100%;
-  height: auto;
-  max-width: 20rem;
-  border-radius: 1rem;
-}
-
-.content {
-  gap: var(--spacing-size-32, 2rem);
-}
-
-.text {
-  gap: var(--spacing-size-14, 0.875rem);
-}
-
 @media (max-width: 48rem) {
   .container {
     padding: var(--padding-vertical-sm, 4rem) var(--container-padding-horizontal-sm, 1.5rem);
@@ -89,36 +46,6 @@
     top: 0;
     bottom: 2rem;
     width: 0.063rem;
-    background-color: var(--color-default-primary-200, #cddff8);
-    z-index: 0;
-  }
-
-  .stepCard {
-    position: relative;
-    padding-left: 3.75rem;
-    max-width: 100%;
-  }
-
-  .stepNumber {
-    width: 2.5rem;
-    height: 2.5rem;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-}
-
-@media (min-width: 48.063rem) {
-  .content {
-    position: relative;
-  }
-  .content::before {
-    content: '';
-    position: absolute;
-    top: 1.5rem;
-    left: -50vw;
-    right: -50vw;
-    height: 0.063rem;
     background-color: var(--color-default-primary-200, #cddff8);
     z-index: 0;
   }

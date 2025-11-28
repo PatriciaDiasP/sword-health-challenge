@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import Button from '@/components/button/Button';
 
 import styles from './ThematicHero.module.css';
 
@@ -33,20 +34,20 @@ export default function ThematicHero() {
       <div className={styles.leftColumn}>
         <div className={styles.leftContent}>
           <header>
-            <h1 id="hero-title" className={styles.title}>
+            <h1 id="hero-title" className={`strong-xl uppercase ${styles.title}`}>
               i move for my
             </h1>
-            <h2 className={styles.wordTitle} aria-live="polite">
+            <h2 className={`strong-xl uppercase ${styles.wordTitle}`} aria-live="polite">
               {words[2]}
             </h2>
           </header>
-          <p>
-            <strong>Mariana,</strong> whatever your why, it’s worth moving for. With weekly
-            personalized movement plans and 1:1 expert guidance, Sword Move can guide you toward
-            your healthiest self.
+          <p className="body-md">
+            <strong className={styles.boldText}>Mariana,</strong> whatever your why, it’s worth
+            moving for. With weekly personalized movement plans and 1:1 expert guidance, Sword Move
+            can guide you toward your healthiest self.
           </p>
-          <button>Get started at no cost</button>
-          <p className={styles.boldText}>Join 50,000+ members moving with purpose.</p>
+          <Button label="Get started at no cost" />
+          <p className={`body-md ${styles.boldText}`}>Join 50,000+ members moving with purpose.</p>
         </div>
       </div>
       <div className={styles.rightColumn}>
@@ -54,7 +55,7 @@ export default function ThematicHero() {
         <div className={styles.wordsWrapper}>
           <ul className={styles.wordsColumn}>
             {words.map((word, i) => (
-              <li key={word} className={`${i === 2 ? styles.active : ''}`}>
+              <li key={word} className={`strong-xl ${i === 2 ? styles.active : ''}`}>
                 {word}
               </li>
             ))}

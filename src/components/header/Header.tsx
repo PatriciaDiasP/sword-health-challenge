@@ -6,7 +6,7 @@ import styles from './Header.module.css';
 export default function Header() {
   return (
     <header className={styles.header}>
-      <p className={styles.logo} aria-label="Sword Move" aria-hidden="true">
+      <p className={`body-sm uppercase ${styles.logo}`} aria-hidden="true">
         logo
       </p>
       <div className={styles.separator} />

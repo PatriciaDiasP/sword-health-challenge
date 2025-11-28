@@ -16,10 +16,6 @@
   align-items: center;
   justify-content: center;
   background-color: #f3eceb;
-  font-weight: var(--font-weight-body-semibold, 600);
-  font-size: var(--font-size-body-sm, 0.875rem);
-  line-height: var(--font-lineHeight-body-sm, 1.375rem);
-  text-transform: uppercase;
 }
 
 .separator {
