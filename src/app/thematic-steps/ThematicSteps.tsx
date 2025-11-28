@@ -6,21 +6,21 @@ import styles from './ThematicSteps.module.css';
 const steps: Step[] = [
   {
     stepNumber: 1,
-    src: '/step1.png',
+    src: '/images/step1.png',
     alt: 'Girl looking at phone',
     title: 'Share a little bit about yourself',
     subtitle: "We'll learn about your goals, motivation and lifestyle.",
   },
   {
     stepNumber: 2,
-    src: '/step2.png',
+    src: '/images/step2.png',
     alt: 'In-app phone call',
     title: 'Match with a Physical Health Specialist',
     subtitle: "You'll work together to set the right plan to help you achieve your 'why'.",
   },
   {
     stepNumber: 3,
-    src: '/step3.png',
+    src: '/images/step3.png',
     alt: 'Girl exercising',
     title: 'Receive a tailored weekly Move Plan',
     subtitle: 'With achievable activities and daily step goals that evolve as you do.',
